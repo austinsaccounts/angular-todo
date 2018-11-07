@@ -14,9 +14,24 @@ export class AppComponent {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   tasks: Task[] = [
-    new Task('finish angular homework'),
-    new Task('brainstorm js group projects'),
-    new Task('add readme'),
-    new Task('add readme to angular repos')
+    new Task('finish angular homework', 1),
+    new Task('brainstorm js group projects', 2),
+    new Task('add readme', 3),
+    new Task('add readme to angular repos', 3)
   ];
+  priorityColor(currentTask) {
+    if (currentTask.priority === 1) {
+      return 'low-class';
+    }
+    if (currentTask.priority === 2) {
+      return 'mid-class';
+    }
+    if (currentTask.priority === 3) {
+      return 'high-class';
+    }
+
+  }
+  EditTask() {
+    alert('this is a title');
+}
 }
