@@ -19,6 +19,7 @@ export class AppComponent {
     new Task('add readme', 3),
     new Task('add readme to angular repos', 3)
   ];
+  selectedTask = null;
   priorityColor(currentTask) {
     if (currentTask.priority === 1) {
       return 'low-class';
@@ -31,7 +32,8 @@ export class AppComponent {
     }
 
   }
-  EditTask() {
-    alert('this is a title');
-}
+  editTask(clickedTask) {
+    this.selectedTask = clickedTask;
+    alert(this.selectedTask);
+  }
 }
