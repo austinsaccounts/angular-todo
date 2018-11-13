@@ -1,13 +1,17 @@
+body * {
+    font-size: 16pt;
+}
 h1 {
     color:green;
 }
 
 button {
-    width: 150px;
+    width: 100px;
     background-color: orange;
+    margin-left: 90%;
 }
 .low-class {
-    color: yellow;
+    color: green;
 }
 .mid-class {
     color: orange;
@@ -15,4 +19,23 @@ button {
 }
 .high-class {
     color: red;
+    background-color: black;
+}
+input {
+    border: 2px;
+    border-color: green;
+    border-style: dashed;
+    background-color: beige;
+    margin-bottom: .75rem;
+}
+p {
+    margin: .5em;
+    padding: 0%;
+}
+h4 {
+    margin: 0;
+}
+li {
+    width: 200px;
+    margin-left: 37%;
 }
